@@ -1,3 +1,3 @@
-export default ({cb, children})=>{
-    return <button onClick={cb} className="product__buy btn">{children}</button>
+export default ({cb, children, Class})=>{
+    return <button onClick={cb} className="product__buy btn" className={Class ? Class.map(cl=>cl+" ")+"btn" : "btn"}>{children}</button>
 }

@@ -40,16 +40,4 @@
     &__price, &__buy{
         text-align: right;
     }
-    &__buy{
-        font-weight: 700;
-        outline: none;
-        cursor: pointer;
-        margin-left: auto;
-        max-width: 200px;
-        margin-top: 10px;
-        border: none;
-        padding: 5px 10px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-    }
 }

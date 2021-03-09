@@ -27,7 +27,7 @@ export default ({ name, imageUrl, sizes, price, id }) => {
         })}
       </div>
       <div className="product__price">{price} ₽</div>
-      <Button cb={clickHandler}>Купить</Button>
+      <Button Class={["product__buy"]} cb={clickHandler}>Купить</Button>
     </div>
   );
 };

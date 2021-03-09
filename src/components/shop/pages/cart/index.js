@@ -19,7 +19,7 @@ export default () => {
                 cart.cart.length ?
                     <>{ cart.cart.map((item, index) => <Item key={item.id+item.size+index} {...item} />) }
                         <div className="cart__total-price">Общая сумма заказа: {cart.totalPrice} ₽</div>
-                        <Button cb={()=>openModal(true)}>Оформить заказ</Button>
+                        <Button Class={["make-order"]} cb={()=>openModal(true)}>Оформить заказ</Button>
                         {modal ? <OrderModal cb={openModal} totalPrice={cart.totalPrice} /> : ''}
                     </>
                     :

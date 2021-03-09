@@ -1,6 +1,6 @@
 @import "./fonts.scss";
 
-body{
+html,body{
     margin: 0;
     font-family: 'PTSansNarrow';
 }
@@ -10,6 +10,14 @@ body{
 }
 a{
     text-decoration: none;
+}
+p{
+    margin: 0;
+}
+input{
+    outline: none;
+    padding-top:4px;
+    padding-bottom: 4px;
 }
 header{
     display: flex;
@@ -33,4 +41,19 @@ header{
             font-size: 18px;
         }
     }
+}
+.btn{
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+    margin-left: auto;
+    max-width: 200px;
+    margin-top: 10px;
+    border: none;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.header{
+    font-size: 32px;
 }

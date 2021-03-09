@@ -1,0 +1,103 @@
+.account{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    
+    &__action{
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        &__type{
+            width: 100%;
+            text-align: center;
+            font-size: 22px;
+            cursor: pointer;
+            padding: 4px 0;
+
+            &.active{
+                box-shadow: 4px 1px 12px 2px #c1c3a6;
+            }
+        }
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+
+        label{
+            width: 100%;
+            line-height: 26px;
+            font-weight: 200;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__input{
+        padding: 3px 10px;
+    }
+
+    &__wrapper{
+        width: 100%;
+        margin-top: 30px;
+    }
+    &__row{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__promo__input{
+        margin: 0 10px;
+    }
+    .order{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 30px;
+        &__header{
+            font-size: 18px;
+            text-align: center;
+            border-bottom: 1px solid black;
+            padding: 7px 0;
+        }
+        &__type{
+            flex: 1;
+            border: 1px solid black;
+        }
+        &__item{
+            display: flex;
+            padding: 7px 10px;
+            margin: 10px 15px;
+            box-shadow: 4px 4px 11px 2px #e6dcce, inset -1px -2px 20px 1px rgba(187,187,187,.54);
+
+            &__price{
+                margin-left: auto;
+                margin-right: 20px;
+            }
+
+            &__order-info{
+                cursor: pointer;
+            }
+        }
+    }
+    .error{
+        position: fixed;
+        top: 0;
+        width: 300px;
+        margin-left: -150px;
+        left: 50%;
+
+        &__item{
+            background-color: rgb(245, 121, 121);
+            margin-bottom: 10px;
+            padding: 7px 20px;
+
+            &.hiding{
+                display: none;
+            }
+        }
+    }
+}

@@ -48,7 +48,7 @@ export default ({ cb, totalPrice }) => {
         <div className="order-modal__total-price">
           Общая сумма заказа: <b>{totalPrice} ₽</b>
         </div>
-        <Button cb={null}>Оформить заказ</Button>
+        <Button Class={['make-order']} cb={null}>Оформить заказ</Button>
       </div>
     </div>
   );
